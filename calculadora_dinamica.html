@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <script>
+            var primeiroNumero = prompt("Informe o primeiro número: ");
+
+            var Sinal = prompt("informe a operação desejada: ");
+                while(Sinal != '+' && Sinal != '-' && Sinal != '*' && Sinal != '/'){
+                    alert("Informe uma operação válida!");
+                       Sinal = prompt("informe a operação desejada: ");
+                }
+            var segundoNumero = prompt("informe o segundo número: ");
+
+                    primeiroNumero = parseInt(primeiroNumero);
+                    segundoNumero = parseInt(segundoNumero);
+
+            var Resultado = ""
+
+            if(Sinal == '+'){
+               Resultado = primeiroNumero + segundoNumero
+                alert("O resultado da operação é "+Resultado+".")
+            }else if(Sinal == '-'){
+               Resultado = primeiroNumero - segundoNumero
+                alert("O resultado da operação é "+Resultado+".")
+            }else if(Sinal == '*'){
+               Resultado = primeiroNumero * segundoNumero
+                alert("O resultado da operação é "+Resultado+".")
+            }else if(Sinal == '/'){
+               Resultado = primeiroNumero / segundoNumero
+                alert("O resultado da operação é "+Resultado+".")}
+
+        </script>
+    </body>
+</html>
